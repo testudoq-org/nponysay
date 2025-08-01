@@ -1,7 +1,9 @@
 {
   "type": "module",
   "name": "ponysay-node",
-  "type": "module",
+  "bin": {
+    "ponysay": "src/cli.mjs"
+  },
   "version": "0.1.0",
   "description": "Ponysay: Node.js edition – display ponies with quotes in your terminal!",
   "main": "src/index.mjs",

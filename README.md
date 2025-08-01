@@ -1,4 +1,49 @@
+> **Note:** To use `ponysay` as a command, install globally with `npm install -g .` or run `npm link` in the project directory after cloning. This will register the CLI so you can run `ponysay "Friendship is magic!"` directly from your terminal.
+## Installation
+
+**Option 1: Install from npm (recommended)**
+```bash
+npm install -g ponysay-node
+```
+This will make the `ponysay` command available globally.
+
+**Option 2: Install from a cloned repository (for development or latest features)**
+```bash
+git clone https://github.com/testudoq-org/nponysay.git
+cd nponysay/ponysay-node
+npm install
+npm link
+```
+This registers your local version globally, so you can run `ponysay "Friendship is magic!"` from any terminal.
+
+**Option 3: Update an existing clone**
+After pulling updates, run:
+```bash
+npm install
+npm link
+```
+to refresh the global command.
+
+---
+
+Once installed, you can use the standard syntax:
+```bash
+ponysay "Friendship is magic!"
+```
+from any terminal, just like the original ponysay tool.
 # Ponysay Node
+**Current:**  
+You must run the CLI with:  
+```sh
+node src/cli.mjs "Hello!" --pony Twilight
+```
+
+**After these changes:**  
+You can run:  
+```sh
+ponysay "Hello!" --pony Twilight
+```
+from any terminal, matching the original ponysay tool's UX.
 
 > Node.js (ES6 `.mjs` modules) implementation of Ponysay with modern asset and balloon rendering.
 

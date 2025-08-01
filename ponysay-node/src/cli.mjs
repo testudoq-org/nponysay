@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /**
  * ponysay-node CLI entrypoint
  * Adds --debug flag support: debug output is only shown if --debug is present.
