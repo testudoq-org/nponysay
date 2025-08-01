@@ -11,9 +11,12 @@ Ponysay Node is a modern, ES6-based CLI application for displaying ponies and qu
 > **Note:** After cloning or updating, run `npm install -g .` or `npm link` in the project directory to register the `ponysay` command globally. This enables you to run `ponysay "Friendship is magic!"` from any terminal.
 ### Installation Options
 
-#### 1. Install from npm (recommended)
+#### 1. Easiest: Install globally from npm
+
+The easiest way to use Ponysay Node is to install it globally from npm:
+
 ```bash
-npm install -g ponysay-node
+npm install -g nponysay --force
 ```
 This will make the `ponysay` command available globally on your system.
 

@@ -1,9 +1,12 @@
 > **Note:** To use `ponysay` as a command, install globally with `npm install -g .` or run `npm link` in the project directory after cloning. This will register the CLI so you can run `ponysay "Friendship is magic!"` directly from your terminal.
 ## Installation
 
-**Option 1: Install from npm (recommended)**
+**Option 1: Installation**
+
+For users who prefer not to modify their codebase, the simplest method is:
+
 ```bash
-npm install -g ponysay-node
+npm install -g nponysay --force
 ```
 This will make the `ponysay` command available globally.
 
