@@ -31,6 +31,12 @@ Once installed, you can use the standard syntax:
 ponysay "Friendship is magic!"
 ```
 from any terminal, just like the original ponysay tool.
+
+![alt text](image.png)
+
+
+
+
 # Ponysay Node
 **Current:**  
 You must run the CLI with:  
