@@ -1,0 +1,12 @@
+__tests__/
+scripts/
+*.test.*
+CONTRIBUTING.md
+USER-GUIDE.md
+image.png
+.github/
+.gitignore
+.npmignore
+memory-bank/
+!README.md
+!COPYING.md

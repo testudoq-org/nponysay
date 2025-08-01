@@ -38,6 +38,13 @@ nponysay — cowsay reimplemention for ponies in node.
 
 Today your node, tomorrow the world!
 
+---
+
+**License**
+
+This project is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0).
+See [COPYING.md](./COPYING.md) for details.
+
 
 ---
 
@@ -110,6 +117,6 @@ ponysay-node "\x1b[35mPurple text\x1b[0m and normal text" --pony=rarity
   - Refer to migration documentation for guidance.
 
 
-This is nponsay-node © 2025 by Testudo is licensed under CC BY-NC-SA 4.0
+This is wponsay-node © 2025 by Testudo is licensed under CC BY-NC-SA 4.0
 
-<a href="https://github.com/testudoq-org/nponysay">nponsay-node</a> © 2025 by <a href="https://www.testudo.co.nz/">Testudo</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+<a href="https://github.com/testudoq-org/nponysay">wponsay-node</a> © 2025 by <a href="https://www.testudo.co.nz/">Testudo</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">

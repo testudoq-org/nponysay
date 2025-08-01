@@ -79,3 +79,59 @@ Follow the project's code of conduct
 
 
 Thank you for helping make ponysay more magical for everypony! 🌈
+
+## Publishing to npm
+
+To publish a new version of the package to [npmjs.com](https://www.npmjs.com/), follow these steps:
+
+### 1. Prerequisites
+
+- Ensure you have an npm account and are logged in:
+  ```sh
+  npm login
+  ```
+- Make sure your local branch is up to date and all changes are committed.
+
+### 2. Update the Version
+
+- Update the `version` field in [`package.json`](ponysay-node/package.json:1) according to [semantic versioning](https://semver.org/):
+  ```sh
+  npm version [patch|minor|major]
+  ```
+  This will also create a git tag.
+
+### 3. Build and Test
+
+- Run all tests and build the package to verify everything works:
+  ```sh
+  npm test
+  npm run build
+  ```
+
+### 4. Publish
+
+- Publish the package to npm:
+  ```sh
+  npm publish
+  ```
+  If publishing a public package for the first time, use:
+  ```sh
+  npm publish --access public
+  ```
+
+### 5. Verify
+
+- Check the package on [npmjs.com](https://www.npmjs.com/) to ensure the new version is available.
+- Install the package in a clean environment to verify:
+  ```sh
+  npm install ponysay-node
+  ```
+
+### 6. Common Gotchas
+
+- Make sure you are publishing from the correct directory (where `package.json` is located).
+- Ensure your `.npmignore` and [`package.json`](ponysay-node/package.json:1) files are correctly configured to avoid publishing unwanted files.
+- If you encounter permission errors, check your npm account permissions and organization settings.
+- Only publish stable, tested code—npm publishes are permanent.
+
+For more details, see the [npm documentation](https://docs.npmjs.com/cli/v10/commands/npm-publish).

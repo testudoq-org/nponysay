@@ -1,12 +1,28 @@
 {
   "type": "module",
-  "name": "ponysay-node",
+  "name": "nponysay",
   "bin": {
     "ponysay": "src/cli.mjs"
   },
   "version": "0.1.0",
   "description": "Ponysay: Node.js edition – display ponies with quotes in your terminal!",
   "main": "src/index.mjs",
+  "repository": "https://github.com/testudoq-org/nponysay",
+  "author": "testudo",
+  "license": "CC-BY-NC-SA-4.0",
+  "keywords": [
+    "ponysay",
+    "ponies",
+    "cli",
+    "terminal",
+    "cowsay",
+    "ascii-art",
+    "fun"
+  ],
+  "homepage": "https://github.com/nietoperz7/nponysay/tree/main/ponysay-node#readme",
+  "bugs": {
+    "url": "https://github.com/nietoperz7/nponysay/issues"
+  },
   "scripts": {
     "test": "vitest"
   },
