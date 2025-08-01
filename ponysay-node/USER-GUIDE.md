@@ -127,7 +127,10 @@ ponysay --assets ./custom-assets --pony Luna
 
 ## License
 
-MIT
+This is wponsay-node © 2025 by Testudo is licensed under CC BY-NC-SA 4.0
+
+<a href="https://github.com/testudoq-org/nponysay">wponsay-node</a> © 2025 by <a href="https://www.testudo.co.nz/">Testudo</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+
 ## Acknowledgements
 
 Special thanks to [https://github.com/erkin/ponysay](https://github.com/erkin/ponysay) for their inspiration and dedication to ANSI code. Your hard work is deeply appreciated!
