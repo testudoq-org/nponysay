@@ -32,7 +32,11 @@ ponysay "Friendship is magic!"
 ```
 from any terminal, just like the original ponysay tool.
 
+nponysay — cowsay reimplemention for ponies in node.
+
 ![alt text](image.png)
+
+Today your node, tomorrow the world!
 
 
 ---
