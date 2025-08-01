@@ -1,0 +1,133 @@
+# Ponysay Node User Guide
+
+## Overview
+
+Ponysay Node is a modern, ES6-based CLI application for displaying ponies and quotes in your terminal. This guide covers installation, usage, CLI flags, asset migration, and current workflows.
+
+---
+
+## Installation
+
+```bash
+npm install -g ponysay-node
+```
+
+- Requires Node.js 16+.
+- Uses ES6 `.mjs` modules.
+
+---
+
+## Usage
+
+Basic command:
+
+```bash
+ponysay "Friendship is magic!"
+```
+
+Display a specific pony:
+
+```bash
+ponysay --pony Twilight "Books are awesome!"
+```
+
+---
+
+## ES6 `.mjs` Modules
+
+- All source files use ES6 syntax and `.mjs` extensions.
+- Import modules using:
+  ```js
+  import { say } from './src/say.mjs';
+  ```
+- Avoid CommonJS (`require`); use `import`/`export`.
+
+---
+
+## CLI Flags
+
+| Flag           | Description                                 | Example                                  |
+|----------------|---------------------------------------------|------------------------------------------|
+| `--pony`       | Select pony by name                         | `--pony Rainbow`                         |
+| `--balloon`    | Choose balloon style                        | `--balloon unicode`                      |
+| `--quote`      | Display a random quote                      | `--quote`                                |
+| `--list`       | List available ponies or balloons           | `--list ponies`                          |
+| `--debug`      | Enable debug output for troubleshooting     | `--debug`                                |
+| `--assets`     | Specify custom asset directory              | `--assets ./my-assets`                   |
+| `--help`       | Show help                                   | `--help`                                 |
+
+---
+
+## Asset Migration
+
+Ponysay Node supports migration from legacy assets.
+
+### Migrating Assets
+
+1. Place legacy assets in `ponysay-node/assets/legacy/`.
+2. Run migration scripts:
+   ```bash
+   node scripts/migrate-ponies.mjs
+   node scripts/migrate-ponyquotes.mjs
+   node scripts/migrate-balloons.mjs
+   ```
+3. Migrated assets will appear in their respective directories.
+
+See [`memory-bank/asset-migration.md`](ponysay-node/memory-bank/asset-migration.md) for details.
+
+---
+
+## Application Behavior
+
+- Loads assets from `ponysay-node/assets/`.
+- Supports both legacy and migrated assets.
+- Uses async/await for all file operations.
+- Handles errors gracefully; use `--debug` for verbose output.
+
+---
+
+## Examples
+
+Display a random pony and quote:
+
+```bash
+ponysay --quote
+```
+
+List all available ponies:
+
+```bash
+ponysay --list ponies
+```
+
+Use a custom asset directory:
+
+```bash
+ponysay --assets ./custom-assets --pony Luna
+```
+
+---
+
+## Troubleshooting
+
+- For verbose logs, use `--debug`.
+- Ensure assets are migrated and in correct directories.
+- For ES6 import errors, check Node.js version and file extensions.
+
+---
+
+## Contributing
+
+- Use ES6 `.mjs` modules.
+- Format code with Prettier: `npx prettier --write .`
+- Lint with ESLint: `npx eslint .`
+- Run tests: `npx jest`
+
+---
+
+## License
+
+MIT
+## Acknowledgements
+
+Special thanks to [https://github.com/erkin/ponysay](https://github.com/erkin/ponysay) for their inspiration and dedication to ANSI code. Your hard work is deeply appreciated!

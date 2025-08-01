@@ -1,0 +1,54 @@
+# Ponysay Node
+
+> Node.js (ES6 `.mjs` modules) implementation of Ponysay with modern asset and balloon rendering.
+
+## Overview
+
+Ponysay Node is a CLI tool for displaying My Little Pony ASCII art with speech/thought balloons. It uses Node.js and ES6 `.mjs` modules for maintainability and extensibility.
+
+## Balloon Rendering with `$balloon5` Sections
+
+Ponysay Node now supports custom balloon rendering using `$balloon5` sections in `.pony` files.
+
+- If a `.pony` file contains a `$balloon5` section, it will be used to render the speech/thought balloon.
+- If `$balloon5` is missing or malformed, Ponysay falls back to a generic balloon template.
+
+### Fallback Behavior
+
+- **Present and valid:** `$balloon5` is parsed and used for rendering.
+- **Missing or malformed:** The system automatically uses a default balloon (e.g., cowsay or unicode style).
+
+## Message Injection and Formatting
+
+- The message is injected into the balloon at the designated placeholder in `$balloon5`.
+- ANSI color codes in the message are preserved and rendered correctly inside the balloon.
+- Alignment (left, center, right) is handled according to the balloon's template or default settings.
+
+## CLI Usage Example
+
+```sh
+ponysay-node "Hello, world!" --pony=twilight
+```
+
+- If `twilight.pony` has a `$balloon5` section, it will be used for the balloon.
+- If not, a generic balloon is used.
+
+### Example with ANSI Colors
+
+```sh
+ponysay-node "\x1b[35mPurple text\x1b[0m and normal text" --pony=rarity
+```
+
+- ANSI color codes are preserved in the output balloon.
+
+## Notes
+
+- **Legacy Notice:** Only the `$balloon5` section is used for custom balloons; older `$balloon` sections are ignored and considered deprecated.
+- **Migration:** Asset maintainers should update legacy assets to use `$balloon5`. See [`memory-bank/asset-migration.md`](ponysay-node/memory-bank/asset-migration.md) for migration steps.
+- **Validation:** Always validate `$balloon5` sections for correct formatting. Malformed sections trigger fallback to generic balloons.
+- **Actionable Steps for Maintainers:**
+  - Review all `.pony` files for `$balloon5` presence.
+  - Update legacy `$balloon` sections to `$balloon5`.
+  - Test balloons with CLI to ensure correct rendering.
+  - Refer to migration documentation for guidance.
+
