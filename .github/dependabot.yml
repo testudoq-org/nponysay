@@ -1,0 +1,36 @@
+version: 2
+updates:
+  # Security updates only for the root package.json (Vitest, Jest, etc.)
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    # This is the key: limit to 0 so Dependabot does NOT open version update PRs
+    # It will still create PRs for security vulnerabilities
+    open-pull-requests-limit: 0
+    # Only allow direct dependencies (keeps it clean)
+    allow:
+      - dependency-type: "direct"
+    # Optional: Group security fixes if multiple come at once
+    groups:
+      security-updates:
+        dependency-type: "direct"
+
+  # Security updates only for the main CLI package (ponysay-node)
+  - package-ecosystem: "npm"
+    directory: "/ponysay-node"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 0
+    allow:
+      - dependency-type: "direct"
+    groups:
+      security-updates:
+        dependency-type: "direct"
+
+  # Also keep GitHub Actions secure (good practice, very low noise)
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 0
